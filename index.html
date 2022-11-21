@@ -12,8 +12,19 @@
         <li>About</li>
         <li>Work</li>
         <li>Resume</li>
-        <li>Contact</li>
+        <li id="contactModal1" onclick="openPopup()">Contact</li>
       </ul>
+      <div class="popup" id="popup">
+        <button class="closeButton" onclick="closePopup()">&times;</button>
+        <h2 id="line1">Thanks for visting my Portfolio!</h2>
+        <h2 id="line2">Send me an email if you want to talk or have any questions!</h2>
+        <input type="text" id="email" placeholder="Email Address">
+        <br><br>
+        <textarea placeholder="Write me a Message!"></textarea>
+        <br><br>
+        <button class="sendMessage" onclick="closePopup()">Send</button>
+      </div>
+      <div id="overlay"></div>
     </header>
     <section class="heroImg">
       <div class="content">
@@ -87,4 +98,7 @@
       </ul> 
     </footer>
   </body>
+  <script src="js/index.js">
+    let popup = document.getElementById("popup");
+  </script>
 </html>

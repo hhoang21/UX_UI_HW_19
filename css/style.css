@@ -181,15 +181,17 @@ footer li:hover {
 
 .popup {
   width: 700px;
-  background: rgb(231, 244, 253);
-  border-radius: 20px;
+  background-image: url("../images/popup\ background.jpg");
+  background-blend-mode: darken;
+  border-radius: 10px;
   position: absolute;
   z-index: 1;
   top: 0%;
   left: 50%;
   transform: translate(-50%, -50%) scale(.1);
   text-align: center;
-  padding: 0 50px 50px;
+  padding: 0 40px 30px;
+  padding-top: 20px;
   color: rgb(3, 80, 125);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   visibility: hidden;
@@ -206,19 +208,66 @@ footer li:hover {
   color: rgb(3, 80, 125);
   font-size: 30px;
   float: right;
+  background-color: white;
+  border: 0px;
 }
 .popup button {
-  width: 100%;
+  width: 50%;
   padding: 2%;
   margin-top: 10px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  color: rgb(3, 80, 125);
+  border: .5px solid rgb(3, 80, 125);
 }
 .popup input {
-  width: 100%;
+  width: 80%;
+  border: none;
+  background-color: rgb(231, 244, 253);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 5px;
 }
 .popup textarea {
-  width: 100%;
-  height: 100px;
+  width: 80%;
+  height: 80px;
+  border: none;
+  background-color: rgb(231, 244, 253);
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+}
+#line1 {
+  font-family: 'Calligraffitti', cursive;
+  font-size: 40px;
+  
+}
+#line2 {
+  font-style: arial;
+  font-size: 15px;
+}
+.fa {
+  padding: 10px;
+  font-size: 15px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
 }
 #overlay {
   display: none;
@@ -235,3 +284,4 @@ footer li:hover {
   opacity: 1;
   pointer-events: all;
 }
+
